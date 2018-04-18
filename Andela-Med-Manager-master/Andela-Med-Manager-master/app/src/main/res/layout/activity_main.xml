@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="user"
+            type="com.androidstudy.andelamedmanager.data.model.User" />
+    </data>
+
+    <android.support.design.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:id="@+id/coordinator_layout"
+        tools:context="com.androidstudy.andelamedmanager.ui.main.ui.MainActivity">
+
+        <android.support.design.widget.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/AppTheme.AppBarOverlay">
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="?attr/colorPrimary"
+                app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+        </android.support.design.widget.AppBarLayout>
+
+        <!--<FrameLayout-->
+        <!--android:id="@+id/layout_empty"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:background="?selectableItemBackground"-->
+        <!--android:gravity="center"-->
+        <!--android:orientation="vertical"-->
+        <!--android:padding="@dimen/padding_normal"-->
+        <!--android:visibility="gone"-->
+        <!--tools:visibility="visible">-->
+
+        <!--<ImageView-->
+        <!--android:id="@+id/image_empty"-->
+        <!--android:layout_width="150dp"-->
+        <!--android:layout_height="150dp"-->
+        <!--android:layout_gravity="center"-->
+        <!--android:contentDescription="@null"-->
+        <!--android:src="@drawable/ic_empty" />-->
+
+        <!--<TextView-->
+        <!--android:id="@+id/text_empty"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_gravity="bottom|center_horizontal"-->
+        <!--android:layout_marginBottom="@dimen/padding_empty_bottom"-->
+        <!--android:gravity="center_horizontal"-->
+        <!--android:padding="@dimen/padding_normal"-->
+        <!--android:textAppearance="@style/TextAppearance.AppCompat.Medium"-->
+        <!--tools:text="@string/text_empty_message" />-->
+        <!--</FrameLayout>-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior"
+            android:padding="@dimen/padding_small">
+
+            <TextView
+                style="@style/mainDashboardWelcomeText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@{`Hello ` + user.name}"
+                tools:text="Hello ," />
+
+            <TextView
+                android:id="@+id/date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/margin_small"
+                android:fontFamily="@font/oxygen_light"
+                android:text="@string/dummy_date"
+                android:textSize="14sp"
+                tools:text="@string/dummy_date" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recyclerViewDailyMedicineStatistics"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:clipToPadding="false"
+                tools:listitem="@layout/row_daily_medicine_statistics" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="21dp"
+                android:layout_marginRight="21dp"
+                android:layout_marginTop="@dimen/margin_normal"
+                android:alpha="0.6"
+                android:background="@color/divider" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/margin_small"
+                android:fontFamily="@font/oxygen_light"
+                android:text="@string/select_activity"
+                android:textSize="15sp" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/margin_normal"
+                android:clipToPadding="false"
+                tools:listitem="@layout/row_main_dashboard" />
+
+        </LinearLayout>
+
+    </android.support.design.widget.CoordinatorLayout>
+
+</layout>

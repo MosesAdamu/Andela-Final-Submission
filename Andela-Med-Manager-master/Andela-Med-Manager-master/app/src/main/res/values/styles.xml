@@ -1,0 +1,132 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <!--<style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">-->
+        <!--&lt;!&ndash; Customize your theme here. &ndash;&gt;-->
+        <!--<item name="colorPrimary">@color/colorPrimary</item>-->
+        <!--<item name="colorPrimaryDark">@color/colorPrimaryDark</item>-->
+        <!--<item name="colorAccent">@color/colorAccent</item>-->
+    <!--</style>-->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowBackground">@color/window_color</item>
+        <item name="cardColor">@color/card_color</item>
+        <item name="dividerColor">@color/divider</item>
+
+        <item name="homeAsUpIndicator">@drawable/ic_arrow_back</item>
+        <item name="preferenceTheme">@style/PreferenceThemeOverlay.v14.Material</item>
+    </style>
+
+    <style name="AppTheme.Light" parent="Theme.AppCompat.Light.NoActionBar">
+
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowBackground">@color/window_color_light</item>
+        <item name="cardColor">@color/card_color_light</item>
+        <item name="dividerColor">@color/divider</item>
+
+        <item name="homeAsUpIndicator">@drawable/ic_arrow_back</item>
+        <item name="preferenceTheme">@style/PreferenceThemeOverlay.v14.Material</item>
+    </style>
+
+    <style name="TransparentTheme" parent="@style/AppTheme" />
+
+    <style name="TransparentTheme.Light" parent="@style/AppTheme.Light" />
+
+    <style name="ToggleButton" parent="@android:style/Widget.CompoundButton.RadioButton">
+        <item name="android:foreground">?selectableItemBackground</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/toggle_background</item>
+        <item name="android:button">@null</item>
+        <item name="android:paddingLeft">8dp</item>
+        <item name="android:paddingBottom">4dp</item>
+        <item name="android:paddingTop">4dp</item>
+        <item name="android:textAppearance">@style/TextAppearance.AppCompat.Title</item>
+        <item name="android:paddingRight">8dp</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="actionBarTitle">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">17sp</item>
+        <item name="android:fontFamily">@font/oxygen_bold</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="mainDashboardWelcomeText">
+        <item name="android:textSize">20sp</item>
+        <item name="android:fontFamily">@font/oxygen_regular</item>
+        <item name="android:textColor">@color/main_gray</item>
+    </style>
+
+    <style name="appLoginText">
+        <item name="android:textSize">20sp</item>
+        <item name="android:fontFamily">@font/oxygen_bold</item>
+        <item name="android:textColor">@color/main_gray</item>
+    </style>
+
+    <style name="dailyMedicineName">
+        <item name="android:textSize">21sp</item>
+        <item name="android:fontFamily">@font/oxygen_regular</item>
+        <item name="android:textColor">@color/colorAccent</item>
+    </style>
+
+    <style name="dailyMedicineStatisticsHeader">
+        <item name="android:textColor">@color/dashboard</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:fontFamily">@font/oxygen_regular</item>
+        <item name="android:textAlignment">center</item>
+    </style>
+
+    <style name="dailyMedicineStatisticsData">
+        <item name="android:textColor">@color/scout_blue_dashboard</item>
+        <item name="android:textSize">25sp</item>
+        <item name="android:fontFamily">@font/oxygen_regular</item>
+        <item name="android:textAlignment">center</item>
+    </style>
+
+    <style name="dailyMedicineStatisticsFooter">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:textColor">@color/dashboard</item>
+        <item name="android:fontFamily">@font/oxygen_bold</item>
+    </style>
+
+    <style name="dailyMedicineRealization">
+        <item name="android:textColor">@color/scout_blue_dashboard_percentage</item>
+        <item name="android:textSize">35sp</item>
+        <item name="android:fontFamily">@font/oxygen_regular</item>
+        <item name="android:textAlignment">center</item>
+    </style>
+
+    <style name="mainDashBoardCardActivityFooter">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:fontFamily">@font/oxygen_regular</item>
+    </style>
+
+    <style name="successDataDetailsRows">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:fontFamily">@font/oxygen_bold</item>
+    </style>
+
+    <style name="generalScreenHints">
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+</resources>
